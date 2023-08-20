@@ -1,0 +1,47 @@
+{
+  "name": "frontend",
+  "version": "0.0.0",
+  "license": "MIT",
+  "homepage": "https://websitesieutoc.com/",
+  "author": {
+    "name": "Website SieuToc Dev Team",
+    "email": "dev@websitesieutoc.com",
+    "url": "https://websitesieutoc.com"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@formatjs/intl-localematcher": "0.2.32",
+    "@headlessui/react": "1.7.15",
+    "@heroicons/react": "2.0.18",
+    "classnames": "2.3.2",
+    "negotiator": "0.6.3",
+    "next": "13.4.2",
+    "qs": "6.11.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-icons": "4.8.0",
+    "react-markdown": "8.0.5",
+    "react-slideshow-image": "4.2.1",
+    "remark-gfm": "3.0.1"
+  },
+  "devDependencies": {
+    "@types/negotiator": "0.6.1",
+    "@types/node": "18.14.6",
+    "@types/qs": "6.9.7",
+    "@types/react": "18.0.28",
+    "@types/react-dom": "18.0.11",
+    "autoprefixer": "10.4.13",
+    "eslint": "8.47.0",
+    "eslint-config-custom": "workspace:*",
+    "eslint-config-next": "13.4.19",
+    "postcss": "8.4.21",
+    "tailwindcss": "3.2.7",
+    "tsconfig": "workspace:*",
+    "typescript": "5.1.6"
+  }
+}

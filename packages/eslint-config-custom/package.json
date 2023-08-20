@@ -1,13 +1,19 @@
 {
   "name": "eslint-config-custom",
   "version": "0.0.0",
-  "main": "index.js",
   "license": "MIT",
+  "homepage": "https://websitesieutoc.com/",
+  "author": {
+    "name": "Website SieuToc Dev Team",
+    "email": "dev@websitesieutoc.com",
+    "url": "https://websitesieutoc.com"
+  },
+  "main": "index.js",
   "dependencies": {
-    "eslint-config-next": "^13.4.1",
-    "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-react": "7.28.0",
-    "eslint-config-turbo": "^1.9.3"
+    "@typescript-eslint/eslint-plugin": "6.4.0",
+    "@typescript-eslint/parser": "6.4.0",
+    "eslint-config-prettier": "9.0.0",
+    "eslint-config-turbo": "1.10.12"
   },
   "publishConfig": {
     "access": "public"

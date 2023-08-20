@@ -1,0 +1,37 @@
+{
+  "name": "backend",
+  "version": "0.0.0",
+  "license": "MIT",
+  "description": "A Strapi application",
+  "homepage": "https://websitesieutoc.com/",
+  "author": {
+    "name": "Website SieuToc Dev Team",
+    "email": "dev@websitesieutoc.com",
+    "url": "https://websitesieutoc.com"
+  },
+  "scripts": {
+    "dev": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi"
+  },
+  "strapi": {
+    "uuid": "408d06b3-f6ce-466f-bafc-628b7a3ee908"
+  },
+  "engines": {
+    "node": ">=16.0.0 <=20.x.x",
+    "npm": ">=6.0.0"
+  },
+  "dependencies": {
+    "@strapi/plugin-i18n": "4.12.5",
+    "@strapi/plugin-seo": "1.8.0",
+    "@strapi/plugin-users-permissions": "4.12.5",
+    "@strapi/provider-upload-cloudinary": "4.12.5",
+    "@strapi/strapi": "4.12.5",
+    "pg": "8.11.2"
+  },
+  "devDependencies": {
+    "eslint-config-custom": "workspace:*",
+    "typescript": "4.5.3"
+  }
+}

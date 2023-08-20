@@ -1,18 +1,28 @@
 {
-  "private": true,
+  "name": "sieutoc-template",
+  "version": "0.0.0",
+  "license": "MIT",
+  "description": "A default template for Website Sieu Toc",
+  "homepage": "https://websitesieutoc.com/",
+  "author": {
+    "name": "Website SieuToc Dev Team",
+    "email": "dev@websitesieutoc.com",
+    "url": "https://websitesieutoc.com"
+  },
   "scripts": {
     "build": "turbo run build",
-    "dev": "turbo run dev",
+    "dev": "docker-compose up -d && dotenv -- turbo dev",
     "lint": "turbo run lint",
+    "typecheck": "turbo run typecheck",
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
   "devDependencies": {
-    "@turbo/gen": "^1.9.7",
-    "eslint": "^7.32.0",
+    "@turbo/gen": "1.10.12",
+    "dotenv-cli": "7.3.0",
+    "eslint": "7.32.0",
     "eslint-config-custom": "workspace:*",
-    "prettier": "^2.5.1",
-    "turbo": "latest"
+    "prettier": "2.5.1",
+    "turbo": "1.10.12"
   },
-  "packageManager": "pnpm@8.6.10",
-  "name": "sieutoc-template"
+  "packageManager": "pnpm@8.6.12"
 }
