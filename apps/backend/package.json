@@ -24,13 +24,13 @@
   },
   "dependencies": {
     "@strapi/plugin-i18n": "4.12.5",
-    "@strapi/plugin-seo": "1.8.0",
     "@strapi/plugin-users-permissions": "4.12.5",
     "@strapi/provider-upload-cloudinary": "4.12.5",
     "@strapi/strapi": "4.12.5",
     "pg": "8.11.2"
   },
   "devDependencies": {
+    "@strapi/typescript-utils": "4.12.5",
     "eslint-config-custom": "workspace:*",
     "typescript": "4.5.3"
   }
