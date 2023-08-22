@@ -1,20 +1,21 @@
 {
   "$schema": "https://turbo.build/schema.json",
-  "globalDependencies": [
-    "**/.env",
-    "**/.env.*local"
-  ],
+  "globalDependencies": ["**/.env", "**/.env.*local"],
   "globalEnv": [
+    "NEXTAUTH_SECRET",
+    "NEXT_PUBLIC_STRAPI_API_TOKEN",
+    "NEXT_PUBLIC_STRAPI_API_URL",
+    "NEXT_PUBLIC_STRAPI_FORM_SUBMISSION_TOKEN",
     "NEXT_PUBLIC_VERCEL_ENV",
-    "NEXT_PUBLIC_VERCEL_GIT_PULL_REQUEST_ID",
-    "NEXT_PUBLIC_VERCEL_GIT_COMMIT_SHA",
     "NEXT_PUBLIC_VERCEL_GIT_COMMIT_AUTHOR_LOGIN",
     "NEXT_PUBLIC_VERCEL_GIT_COMMIT_AUTHOR_NAME",
-    "NEXT_PUBLIC_STRAPI_FORM_SUBMISSION_TOKEN",
-    "NEXT_PUBLIC_STRAPI_API_URL",
+    "NEXT_PUBLIC_VERCEL_GIT_COMMIT_SHA",
+    "NEXT_PUBLIC_VERCEL_GIT_PULL_REQUEST_ID",
+    "NODE_ENV",
     "RAILWAY_GIT_BRANCH",
     "SENDGRID_API_KEY",
     "SERVER_URL",
+    "SITE_DOMAIN",
     "STREAM_API_KEY",
     "STREAM_API_SECRET",
     "STREAM_APP_ID",
@@ -24,29 +25,17 @@
   ],
   "pipeline": {
     "topo": {
-      "dependsOn": [
-        "^topo"
-      ]
+      "dependsOn": ["^topo"]
     },
     "build": {
-      "dependsOn": [
-        "^build"
-      ],
-      "outputs": [
-        "dist/**",
-        ".next/**",
-        "!.next/cache/**"
-      ]
+      "dependsOn": ["^build"],
+      "outputs": ["dist/**", ".next/**", "!.next/cache/**"]
     },
     "lint": {
-      "dependsOn": [
-        "topo"
-      ]
+      "dependsOn": ["topo"]
     },
     "typecheck": {
-      "dependsOn": [
-        "topo"
-      ]
+      "dependsOn": ["topo"]
     },
     "dev": {
       "cache": false,

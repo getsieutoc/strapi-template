@@ -12,5 +12,6 @@ module.exports = {
   },
   rules: {
     'react/display-name': 'off',
+    '@next/next/no-html-link-for-pages': ['error', 'src/pages/'],
   },
 };
