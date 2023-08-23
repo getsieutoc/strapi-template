@@ -2,6 +2,8 @@
 
 This is an official starter Turborepo.
 
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/sHpSCp?referralCode=pwTZMY)
+
 ## Using this example
 
 Run the following command:
