@@ -1,2 +1,2 @@
 [phases.build]
-cmds = ["pnp run build --filter backend"]
+cmds = ['pnpm --filter "backend" run build']
