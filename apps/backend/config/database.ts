@@ -3,6 +3,7 @@ export default ({ env }) => {
     connection: {
       client: 'postgres',
       connection: {
+        connectionString: env('DATABASE_URL', ''),
         host: env('PGHOST', 'localhost'),
         port: env.int('PGPORT', 5432),
         database: env('PGDATABASE', 'postgres'),
