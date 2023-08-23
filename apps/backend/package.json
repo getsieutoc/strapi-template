@@ -14,7 +14,7 @@
     "start": "strapi start",
     "build": "strapi build",
     "strapi": "strapi",
-    "typecheck": "npm run typecheck"
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
     "@strapi/strapi": "4.12.5",
