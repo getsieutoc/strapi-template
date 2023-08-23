@@ -1,2 +1,5 @@
+[phases.install]
+cmds = ['pnpm i --shamefully-hoist', 'pnpm i --config.node-linker=hoisted']
+
 [phases.build]
 cmds = ['pnpm --filter "backend" run build']
