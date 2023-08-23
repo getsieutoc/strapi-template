@@ -14,7 +14,8 @@
     "start": "strapi start",
     "build": "strapi build",
     "strapi": "strapi",
-    "typecheck": "npm run typecheck"
+    "lint": "eslint \"{src,config}/**/*.ts\"",
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
     "@strapi/strapi": "4.12.5",
@@ -24,6 +25,7 @@
   },
   "devDependencies": {
     "@strapi/typescript-utils": "4.12.5",
+    "eslint": "8.47.0",
     "eslint-config-custom": "workspace:*",
     "typescript": "5.1.6"
   },
