@@ -25,9 +25,9 @@
     "turbo": "1.10.12"
   },
   "engines": {
-    "node": ">=18",
-    "pnpm": ">=8"
+    "node": ">=18"
   },
+  "packageManager": "npm@9.5.1",
   "workspaces": [
     "packages/*",
     "apps/*"

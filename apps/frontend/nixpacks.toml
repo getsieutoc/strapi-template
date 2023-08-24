@@ -1,2 +1,2 @@
 [phases.build]
-cmds = ['pnpm --filter frontend run build']
+cmds = ['npm run build --workspace=frontend']
