@@ -1,2 +1,2 @@
 [phases.build]
-cmds = ['npm run build --workspace=frontend']
+cmds = ['yarn workspace frontend build']
