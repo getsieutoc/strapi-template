@@ -42,10 +42,9 @@
     "@types/react": "18.2.20",
     "@types/react-dom": "18.2.7",
     "eslint": "8.47.0",
-    "eslint-config-custom": "workspace:*",
+    "eslint-config-custom": "*",
     "eslint-config-next": "13.4.19",
-    "lodash": "^4.17.21",
-    "tsconfig": "workspace:*",
+    "tsconfig": "*",
     "typescript": "5.1.6"
   }
 }

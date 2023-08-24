@@ -1,2 +1,2 @@
 [phases.build]
-cmds = ['pnpm --filter backend run build']
+cmds = ['yarn workspace backend build']
