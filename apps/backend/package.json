@@ -18,13 +18,13 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@strapi/strapi": "4.12.5",
-    "@strapi/plugin-users-permissions": "4.12.5",
-    "@strapi/plugin-i18n": "4.12.5",
+    "@strapi/plugin-i18n": "4.12.6",
+    "@strapi/plugin-users-permissions": "4.12.6",
+    "@strapi/strapi": "4.12.6",
     "pg": "8.11.2"
   },
   "devDependencies": {
-    "@strapi/typescript-utils": "4.12.5",
+    "@strapi/typescript-utils": "4.12.6",
     "eslint": "8.47.0",
     "eslint-config-custom": "*",
     "typescript": "5.1.6"
