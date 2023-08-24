@@ -2,7 +2,7 @@ import { Box, Heading, Spinner } from '@chakra-ui/react';
 import { useRouter } from 'next/router';
 import { useSWR } from '@/hooks';
 // import { Post } from '@prisma/client';
-const fetcher = async (url: string) => await fetch(url).then((r) => r.json());
+// const fetcher = async (url: string) => await fetch(url).then((r) => r.json());
 
 const PagePost = () => {
   const route = useRouter();
