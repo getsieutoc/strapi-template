@@ -72,6 +72,9 @@ importers:
       '@emotion/styled':
         specifier: 11.11.0
         version: 11.11.0(@emotion/react@11.11.1)(@types/react@18.2.20)(react@18.2.0)
+      '@tanstack/react-table':
+        specifier: ^8.9.3
+        version: 8.9.3(react-dom@18.2.0)(react@18.2.0)
       deepmerge:
         specifier: 4.3.1
         version: 4.3.1
@@ -102,13 +105,16 @@ importers:
       react-virtuoso:
         specifier: 4.5.0
         version: 4.5.0(react-dom@18.2.0)(react@18.2.0)
+      suneditor:
+        specifier: ^2.45.1
+        version: 2.45.1
+      suneditor-react:
+        specifier: ^3.6.1
+        version: 3.6.1(react-dom@18.2.0)(react@18.2.0)(suneditor@2.45.1)
       swr:
         specifier: 2.2.1
         version: 2.2.1(react@18.2.0)
     devDependencies:
-      '@tanstack/react-table':
-        specifier: ^8.9.3
-        version: 8.9.3(react-dom@18.2.0)(react@18.2.0)
       '@types/node':
         specifier: 20.5.1
         version: 20.5.1
@@ -133,12 +139,6 @@ importers:
       lodash:
         specifier: ^4.17.21
         version: 4.17.21
-      suneditor:
-        specifier: ^2.45.1
-        version: 2.45.1
-      suneditor-react:
-        specifier: ^3.6.1
-        version: 3.6.1(react-dom@18.2.0)(react@18.2.0)(suneditor@2.45.1)
       tsconfig:
         specifier: workspace:*
         version: link:../../packages/tsconfig
@@ -3850,12 +3850,12 @@ packages:
       '@tanstack/table-core': 8.9.3
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
-    dev: true
+    dev: false
 
   /@tanstack/table-core@8.9.3:
     resolution: {integrity: sha512-NpHZBoHTfqyJk0m/s/+CSuAiwtebhYK90mDuf5eylTvgViNOujiaOaxNDxJkQQAsVvHWZftUGAx1EfO1rkKtLg==}
     engines: {node: '>=12'}
-    dev: true
+    dev: false
 
   /@tootallnate/quickjs-emscripten@0.23.0:
     resolution: {integrity: sha512-C5Mc6rdnsaJDjO3UpGW/CQTHtCKaYlScZTly4JIu97Jxo/odCiH0ITnDXSJPTOrEKk/ycSZ0AOgTmkDtkOsvIA==}
@@ -10693,6 +10693,7 @@ packages:
       loose-envify: 1.4.0
       react: 18.2.0
       scheduler: 0.23.0
+    dev: false
 
   /react-error-boundary@3.1.4(react@18.2.0):
     resolution: {integrity: sha512-uM9uPzZJTF6wRQORmSrvOIgt4lJ9MC1sNgEOj2XGsDTRE4kmpWxg7ENK9EWNKJRMAOY9z0MuF4yIfl6gp4sotA==}
@@ -11038,6 +11039,7 @@ packages:
     engines: {node: '>=0.10.0'}
     dependencies:
       loose-envify: 1.4.0
+    dev: false
 
   /readable-stream@1.0.34:
     resolution: {integrity: sha512-ok1qVCJuRkNmvebYikljxJA/UEsKwLl2nI1OmaqAu4/UE+h0wKCHok4XkL/gvi39OacXvw59RJUOFUkDib2rHg==}
@@ -11423,6 +11425,7 @@ packages:
     resolution: {integrity: sha512-CtuThmgHNg7zIZWAXi3AsyIzA3n4xx7aNyjwC2VJldO2LMVDhFK+63xGqq6CsJH4rTAt6/M+N4GhZiDYPx9eUw==}
     dependencies:
       loose-envify: 1.4.0
+    dev: false
 
   /schema-utils@3.3.0:
     resolution: {integrity: sha512-pN/yOAvcC+5rQ5nERGuwrjLlYvLTbCibnZ1I7B1LaiAz9BRBlE9GMgE/eqV30P7aJQUf7Ddimy/RsbYO/GrVGg==}
@@ -12018,11 +12021,11 @@ packages:
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
       suneditor: 2.45.1
-    dev: true
+    dev: false
 
   /suneditor@2.45.1:
     resolution: {integrity: sha512-fLxc0nLwd77vaPuf78D+VAFNAgX9hLps6h96JA/LUCpqt4LeYnEaIE1RfJojX+BhSA+krl5qZ8pdgqcoo3dN3g==}
-    dev: true
+    dev: false
 
   /supports-color@2.0.0:
     resolution: {integrity: sha512-KKNVtd6pCYgPIKU4cp2733HWYCpplQhddZLBUryaAHou723x+FRzQ5Df824Fj+IyyuiQTRoub4SnIFfIcrp70g==}
