@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_footer_footer_type_1s",
+  "info": {
+    "displayName": "Footer 1",
+    "icon": "apps",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "details": {
+      "type": "text"
+    },
+    "linkBlockOne": {
+      "type": "component",
+      "repeatable": true,
+      "component": "general.link"
+    },
+    "linkBlockOneTitle": {
+      "type": "string"
+    }
+  }
+}

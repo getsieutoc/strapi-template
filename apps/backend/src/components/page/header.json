@@ -16,7 +16,7 @@
     "bigButton": {
       "type": "component",
       "repeatable": false,
-      "component": "page.button"
+      "component": "general.button"
     }
   }
 }
