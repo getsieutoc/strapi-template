@@ -1,10 +1,10 @@
 {
-  "kind": "collectionType",
-  "collectionName": "pages",
+  "kind": "singleType",
+  "collectionName": "homes",
   "info": {
-    "singularName": "page",
-    "pluralName": "pages",
-    "displayName": "Page",
+    "singularName": "home",
+    "pluralName": "homes",
+    "displayName": "Home",
     "description": ""
   },
   "options": {
@@ -17,30 +17,32 @@
   },
   "attributes": {
     "title": {
-      "type": "string",
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
-      }
+      },
+      "type": "string"
     },
-    "content": {
-      "type": "richtext",
+    "header": {
+      "type": "component",
+      "repeatable": false,
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
-      }
+      },
+      "component": "page.header"
     },
-    "slug": {
-      "type": "string",
-      "required": true,
-      "unique": true,
+    "footer": {
+      "type": "component",
+      "repeatable": false,
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
-      }
+      },
+      "component": "page.footer-type-1"
     }
   }
 }

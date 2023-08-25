@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_page_headers",
+  "info": {
+    "displayName": "header",
+    "icon": "dashboard",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "descripption": {
+      "type": "string"
+    },
+    "bigButton": {
+      "type": "component",
+      "repeatable": false,
+      "component": "general.button"
+    }
+  }
+}
