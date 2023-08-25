@@ -52,7 +52,8 @@ export async function fetchStrapi(
   }
 }
 
-export async function getPageBySlug(slug: string, lang: string) {
+export async function getPageBySlug(slug: string, lang = 'en') {
+  // TODO: Change to get token in server so we will not expose it in PUBLIC
   const token = process.env.NEXT_PUBLIC_STRAPI_API_TOKEN;
 
   const path = `/pages`;
